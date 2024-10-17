@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @ayutechhunt
+- 👋 Hi, I’m @ayushkumardubey
 - 👀 I’m interested in generating new innovative ideas
 - 🌱 I’m currently learning Data Structure with C
 - 💞️ I’m looking to collaborate on ...
