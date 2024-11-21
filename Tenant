@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+
+        body nav{
+            background: #30a6e6;
+            width: 100%;
+        } 
+          .dropdown ul,.dropdown li{
+            margin: 0;
+            padding: 0;
+          }
+   
+          .dropdown ul{
+           background: grey;
+           list-style: none;
+          }
+   
+          .dropdown li{
+           float: left;
+           position: relative;
+           width: auto;
+          }
+   
+          .dropdown a{
+           background: #30a6e6;
+           color: white;
+           display: block;
+           font-weight: bold;
+           font-size: 13px;
+           font-family:'poppins',sans-serif;
+           padding: 15px 55px;
+           text-align: center;
+           text-decoration: none;
+           transition: all 0.25s ease;
+          }
+   
+   
+          .dropdown li:hover a{
+           background: #34495e;
+          }
+   
+          #subname{
+           left: 0;
+           opacity: 0;
+           position: absolute;
+           top: 35px;
+           visibility: hidden;
+           z-index: 1;
+          }
+   
+          li:hover ul#subname{
+           opacity: 1;
+           top: 80px;
+           visibility: visible;
+          }
+   
+   
+          #subname li{
+           float: none;
+           width: 100%;
+          }
+   
+          #subname a:hover{
+           background: #df4b05;
+          }
+   
+          #subname a{
+           background-color: #34495e;
+          }
+
+        .child{
+            width: 300px;
+            padding: 10px 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(100, 144, 183);
+            text-align: center;
+            border: 2px;
+            padding: 50px;
+            background: antiquewhite;;
+        }
+
+        .child{
+            position: absolute;
+            left: 50%;
+            top: 36%;
+        }
+
+        .main{
+            font-family: Arial, Helvetica, sans-serif;
+            background: antiquewhite;
+            font-size: larger;
+        }
+        img{
+            padding-top: 50px;
+            padding-right:4px ;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center"><u>Tenant Application</u></h1>
+    <br>
+    <div class="main">
+        <div class="nav">
+            <nav class="dropdown">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Tenant</a>
+                        <ul id="subname">
+                            <li><a href="">Add Tenant</a></li>
+                            <li><a href="">Edit Tenant</a></li>
+                            <li><a href="">Update Tenant</a></li>
+                         </ul>
+                    </li>
+                    <li><a href="">Tenant profile</a>
+                        <ul id="subname">
+                            <li><a href="registration.html">Register</a></li>
+                            <li><a href="#">Update</a></li>
+                            <li><a href="#">Profile</a></li>
+                         </ul>
+                    </li>
+                    <li><a href="#">Owner Feilds</a>
+                        <ul id="subname">
+                            <li><a href="registration.html">Register</a></li>
+                            <li><a href="#">Update</a></li>
+                            <li><a href="#">Profile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Conatct us </a></li>
+                    <li><a href="#">About Us </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <img src="download.jpg" alt="random image" height="300px" width="500px">
+        </div>
+            <div class="parent">
+                <div class="child">
+                    <table>
+                        <tr>
+                            <td>
+                                Username:
+                            </td>
+                            <td>
+                                <input type="text" name="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Password:
+                            </td>
+                            <td>
+                                <input type="password" name="">
+                            </td>
+                        </tr>
+                    </table>
+                    <pre> <input type="Submit" value="Submit"></pre>
+                    <pre><a href="registration.html">Registration</a>            <a href="">Forget Password</a></pre>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
